@@ -1,0 +1,24 @@
+<div class="page">
+    <div class="page__hd">
+        <div><span class="page__desc">姓名：xxxx</span></div>
+        <div><span class="page__desc">手机号：xxxx</span></div>
+        <div><span class="page__desc">咨询时间：xxxx</span></div>
+        <div><span class="page__desc">公司名称：xxxx</span></div>
+        <div><span class="page__desc">员工号：xxxx</span></div>
+        <div><span class="page__desc">费用：260元 / 次</span></div>
+    </div>
+    <div class="page__bd">
+        <div class="weui-btn-area" data-id="phUploader">
+            <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips">预约</a>
+        </div>
+    </div>
+    <div class="page__ft">
+        <a href="javascript:home()"><img src="./images/icon_footer_link.png" /></a>
+    </div>
+</div>
+<script type="text/javascript">
+    $('.weui-btn-area').on('click', function(){
+        var id = $(this).data('id');
+        window.pageManager.go(id);
+    });
+</script>
